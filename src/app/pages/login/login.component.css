@@ -1,0 +1,117 @@
+*{
+  font-family: "Open Sans", serif;
+
+}
+.izqlogin {
+  position: relative;
+  display: inline-block; /* Ajusta el ancho y alto al tamaño de la imagen */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(16, 29, 42,.8);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.container-login{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.text-wrapper{
+  padding-top: 15em;
+}
+.izqlogin{
+  width: 50%;
+  overflow: hidden;
+}
+.izqlogin img  {
+  max-width: 100%; /* La imagen no debe ser más ancha que su contenedor */
+  height: auto;
+}
+.derlogin{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6em;
+
+
+}
+.row  {
+  display: flex;
+  flex-direction: column;
+}
+form{
+  width: 55%;
+
+}
+.login-inicio{
+  font-size: 32px;
+}
+
+.text-wrapper h1{
+  color: #f1890e;
+  font-size: 60px;
+}
+.text-wrapper h2{
+  color: #fff;
+  font-size: 40px;
+  top: 60%;
+}
+
+.text-wrapper h1,
+.text-wrapper h2 {
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  position: absolute;
+  right: 50px;
+
+}
+
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__delay-1s {
+  animation-delay: .5s;
+}
+
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #080722;
+  padding: .3em 1em;
+  margin: 0 1em;
+}
+i {
+  fill: currentColor;
+  color:#f1890e ;
+}
+.svg-inline--fa {
+  color:#ccc;
+}

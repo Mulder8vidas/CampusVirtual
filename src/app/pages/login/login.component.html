@@ -1,0 +1,38 @@
+<div class="container-login">
+  <div class="izqlogin">
+    <img src="assets/wepik-export-20230424190702.webp ">
+    <div class="overlay">
+      <div class="text-wrapper">
+
+        <h2 class="animate__animated animate__fadeInLeft ">Bienvenido a</h2>
+        <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">TU CAMPUS VIRTUAL</h1>
+      </div>
+    </div>
+  </div>
+  <div class="derlogin">
+    <div class="login-inicio">
+      Bienvenido,  <span style="font-weight: bold; color: orange;">Ingresa tus datos</span>,
+    </div>
+
+    <form [formGroup]="form" #LoginInformation (ngSubmit)="Login()">
+
+      <div class="row">
+        <label ><i class="fas fa-location-arrow"></i>  Email </label>
+        <input formControlName="email" class="form-control" type="text" placeholder="usuario@sistema.com ">
+      </div>
+
+      <div class="row">
+        <label> <i class="fas fa-location-arrow"></i>Password </label>
+        <input formControlName="password" class="form-control" type="password" placeholder="Ingrese su clave"  >
+      </div>
+
+      <div class="row" style="margin-top: 40px;">
+        <button class="btn btn-md btn-primary btn-style"  >Login</button>
+      </div>
+
+    </form>
+
+
+  </div>
+</div>
+
